@@ -8,7 +8,6 @@ export default async function Session() {
     const session = await getSession();
     const token = await getTokenWorkaround();
 
-    console.log("session, ", session)
     return (
         <div>
             <Heading title='Session dashboard' />

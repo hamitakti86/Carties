@@ -18,9 +18,6 @@ export const authOptions: NextAuthOptions = {
     ],
     callbacks: {
         async jwt({ token, profile, account }) {
-            console.log("t", token)
-            console.log("p", profile)
-            console.log("a", account)
             if (profile) {
                 token.username = profile.username
             }
@@ -30,8 +27,6 @@ export const authOptions: NextAuthOptions = {
             return token;
         },
         async session({ session, token }) {
-            console.log("t", token)
-            console.log("s", session)
             if (token) {
                 session.user.username = token.username
             }
