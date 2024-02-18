@@ -31,7 +31,7 @@ export default function Search() {
                 value={searchValue}
                 onChange={onChange}
                 type="text"
-                placeholder='Search for cars by make, model or color'
+                placeholder='Search for cars by make, model or color f'
                 className='
                 flex-grow
                 pl-5
