@@ -14,6 +14,7 @@ export default (phase, { defaultConfig }) => {
                 },
             ],
         },
+        output: 'standalone'
     }
     return nextConfig
 }
