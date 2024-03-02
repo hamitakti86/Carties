@@ -22,7 +22,7 @@ spec:
                 name: webapp-clusterip
                 port:
                   number: 3000
-    - host: api.carsties.com
+    - host: api.carties.com
       http:
         paths:
           - pathType: Prefix
