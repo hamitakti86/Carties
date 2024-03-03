@@ -2,19 +2,12 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-svc
-  annotations:
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
   labels:
     name: ingress-svc
 spec:
   ingressClassName: nginx
-  tls:
-    - hosts:
-        - app.carties.store
-        - api.carties.store
-      secretName: carties-tls
   rules:
-    - host: app.carties.store
+    - host: app.carstiest.lol
       http:
         paths:
           - pathType: Prefix
@@ -24,7 +17,7 @@ spec:
                 name: webapp-clusterip
                 port:
                   number: 3000
-    - host: api.carties.store
+    - host: api.carstiest.lol
       http:
         paths:
           - pathType: Prefix
