@@ -27,7 +27,7 @@ spec:
                   name: webapp-secret
                   key: clientSecret
             - name: NEXTAUTH_URL
-              value: https://app.carties.store
+              value: https://app.carstiest.lol
             - name: API_URL
               value: http://gateway-clusterip/
             - name: ID_URL

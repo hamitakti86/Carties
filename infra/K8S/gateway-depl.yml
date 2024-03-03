@@ -17,7 +17,7 @@ spec:
           imagePullPolicy: Always
           env:
             - name: ClientApp
-              value: https://app.carties.store
+              value: https://app.carstiest.lol
             - name: IdentityServiceUrl
               value: https://id.hamitakti.com
 ---
