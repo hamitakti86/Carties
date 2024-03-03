@@ -14,10 +14,10 @@ spec:
       containers:
         - name: gateway-svc
           image: hakti/gateway-svc
-          imagePullPolicy: Never
+          imagePullPolicy: Always
           env:
             - name: ClientApp
-              value: https://app.carties.com
+              value: https://app.carties.store
             - name: IdentityServiceUrl
               value: https://id.hamitakti.com
 ---
